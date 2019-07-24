@@ -1,0 +1,7 @@
+<h1>Restaurants around the world</h1>
+
+<% @restaurant.each do |restaurant| %>
+  <p><%= link_to restaurant.name, restaurant_path(restaurant.id) %> &#8211 <%= restaurant.address %> &#8211 <%= restaurant.phone_number %> &#8211 <%= restaurant.category %>
+  </p>
+<!--   <%= link_to "show", restaurant_path(restaurant.id), method: "delete"%> -->
+<% end %>

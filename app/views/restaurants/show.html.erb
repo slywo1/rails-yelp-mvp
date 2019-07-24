@@ -1,0 +1,5 @@
+<h1><%= @restaurant.title %></h1>
+
+<%= @restaurant.details %>
+<p><%= link_to "edit", edit_restaurant_path(@restaurant.id) %></p>
+<p><%= link_to "delete", restaurant_path(@restaurant.id), method: :delete%></p>
